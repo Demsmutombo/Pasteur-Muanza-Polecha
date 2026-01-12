@@ -11,6 +11,16 @@ export default defineConfig({
   },
   publicDir: 'public',
   assetsInclude: ['**/*.PNG', '**/*.png'],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['vue', 'vue-router']
+        }
+      }
+    },
+    chunkSizeWarningLimit: 1000
+  },
   server: {
     host: 'localhost',
     port: 5173,

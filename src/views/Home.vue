@@ -238,18 +238,28 @@
 
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
               <!-- Cimetière Images -->
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" v-for="img in cimetiereImages" :key="img">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" v-for="img in displayedCimetiereImages" :key="img">
                 <a :href="encodeImageUrl(img)" class="glightbox" data-glightbox="gallery" data-title="Cimetière">
-                  <img :src="encodeImageUrl(img)" class="img-fluid" alt="">
+                  <img :src="encodeImageUrl(img)" class="img-fluid" alt="" loading="lazy" decoding="async">
                 </a>
               </div>
 
               <!-- Morgue Images -->
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" v-for="img in morgueImages" :key="img">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" v-for="img in displayedMorgueImages" :key="img">
                 <a :href="encodeImageUrl(img)" class="glightbox" data-glightbox="gallery" data-title="Morgue">
-                  <img :src="encodeImageUrl(img)" class="img-fluid" alt="">
+                  <img :src="encodeImageUrl(img)" class="img-fluid" alt="" loading="lazy" decoding="async">
                 </a>
               </div>
+            </div>
+            
+            <!-- Boutons pour charger plus d'images -->
+            <div class="text-center mt-4" v-if="hasMoreCimetiereImages || hasMoreMorgueImages">
+              <button v-if="hasMoreCimetiereImages && !showAllCimetiere" @click="showAllCimetiere = true" class="btn btn-primary me-2">
+                Voir toutes les images du cimetière ({{ cimetiereImages.length - imagesPerPage }} de plus)
+              </button>
+              <button v-if="hasMoreMorgueImages && !showAllMorgue" @click="showAllMorgue = true" class="btn btn-primary">
+                Voir toutes les images de la morgue ({{ morgueImages.length - imagesPerPage }} de plus)
+              </button>
             </div>
           </div>
         </div>
@@ -267,7 +277,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="photo in pasteurPhotos" :key="photo">
                 <div class="testimonial-item">
-                  <img :src="encodeImageUrl(photo)" class="testimonial-img" alt="" style="width: 80%; height: auto; border-radius: 0;">
+                  <img :src="encodeImageUrl(photo)" class="testimonial-img" alt="" style="width: 80%; height: auto; border-radius: 0;" loading="lazy" decoding="async">
                 </div>
               </div>
             </div>
@@ -634,7 +644,36 @@ export default {
         '/assets/img/portfolio/image du pasteur/WhatsApp Image 2026-01-12 at 08.48.59.jpeg'
       ],
       swiperInstance: null,
-      daysSinceDeath: 0
+      daysSinceDeath: 0,
+      imagesPerPage: 30,
+      showAllCimetiere: false,
+      showAllMorgue: false
+    }
+  },
+  computed: {
+    displayedCimetiereImages() {
+      return this.showAllCimetiere ? this.cimetiereImages : this.cimetiereImages.slice(0, this.imagesPerPage)
+    },
+    displayedMorgueImages() {
+      return this.showAllMorgue ? this.morgueImages : this.morgueImages.slice(0, this.imagesPerPage)
+    },
+    hasMoreCimetiereImages() {
+      return this.cimetiereImages.length > this.imagesPerPage
+    },
+    hasMoreMorgueImages() {
+      return this.morgueImages.length > this.imagesPerPage
+    }
+  },
+  watch: {
+    showAllCimetiere() {
+      this.$nextTick(() => {
+        this.reinitIsotope()
+      })
+    },
+    showAllMorgue() {
+      this.$nextTick(() => {
+        this.reinitIsotope()
+      })
     }
   },
   mounted() {
