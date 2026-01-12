@@ -239,15 +239,15 @@
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
               <!-- Cimetière Images -->
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" v-for="img in cimetiereImages" :key="img">
-                <a :href="img" class="glightbox" data-glightbox="gallery" data-title="Cimetière">
-                  <img :src="img" class="img-fluid" alt="">
+                <a :href="encodeImageUrl(img)" class="glightbox" data-glightbox="gallery" data-title="Cimetière">
+                  <img :src="encodeImageUrl(img)" class="img-fluid" alt="">
                 </a>
               </div>
 
               <!-- Morgue Images -->
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" v-for="img in morgueImages" :key="img">
-                <a :href="img" class="glightbox" data-glightbox="gallery" data-title="Morgue">
-                  <img :src="img" class="img-fluid" alt="">
+                <a :href="encodeImageUrl(img)" class="glightbox" data-glightbox="gallery" data-title="Morgue">
+                  <img :src="encodeImageUrl(img)" class="img-fluid" alt="">
                 </a>
               </div>
             </div>
@@ -267,7 +267,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="photo in pasteurPhotos" :key="photo">
                 <div class="testimonial-item">
-                  <img :src="photo" class="testimonial-img" alt="" style="width: 80%; height: auto; border-radius: 0;">
+                  <img :src="encodeImageUrl(photo)" class="testimonial-img" alt="" style="width: 80%; height: auto; border-radius: 0;">
                 </div>
               </div>
             </div>
@@ -642,6 +642,21 @@ export default {
     this.initScripts()
   },
   methods: {
+    encodeImageUrl(url) {
+      // Encode les espaces et caractères spéciaux dans l'URL tout en préservant les slashes
+      if (!url) return url
+      // Si l'URL commence par /, c'est un chemin absolu
+      if (url.startsWith('/')) {
+        const parts = url.split('/')
+        const encodedParts = parts.map(part => {
+          // Encode chaque segment sauf les segments vides (qui représentent les slashes)
+          return part ? encodeURIComponent(part) : ''
+        })
+        return encodedParts.join('/')
+      }
+      // Pour les autres URLs, encoder normalement
+      return encodeURI(url)
+    },
     calculateDaysSinceDeath() {
       // Date de décès : 20 décembre 2025
       const deathDate = new Date(2025, 11, 20) // Mois 11 = décembre (0-indexé)
