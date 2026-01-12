@@ -254,10 +254,10 @@
             
             <!-- Boutons pour charger plus d'images -->
             <div class="text-center mt-4" v-if="hasMoreCimetiereImages || hasMoreMorgueImages">
-              <button v-if="hasMoreCimetiereImages && !showAllCimetiere" @click="showAllCimetiere = true" class="btn btn-primary me-2">
+              <button v-if="hasMoreCimetiereImages && !showAllCimetiere" @click="showAllCimetiere = true" class="btn btn-primary me-2 mb-2">
                 Voir toutes les images du cimetière ({{ cimetiereImages.length - imagesPerPage }} de plus)
               </button>
-              <button v-if="hasMoreMorgueImages && !showAllMorgue" @click="showAllMorgue = true" class="btn btn-primary">
+              <button v-if="hasMoreMorgueImages && !showAllMorgue" @click="showAllMorgue = true" class="btn btn-primary mb-2">
                 Voir toutes les images de la morgue ({{ morgueImages.length - imagesPerPage }} de plus)
               </button>
             </div>
