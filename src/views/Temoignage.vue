@@ -5,10 +5,10 @@
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
-        <img src="/assets/img/IMG_20240915_050452_231.jpg" alt="" data-aos="fade-in">
+        <img src="/assets/img/portfolio/image du pasteur/WhatsApp Image 2025-12-28 at 21.55.56.jpeg" alt="" data-aos="fade-in">
         <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-          <h2>En mémoire de Henock Ngandu</h2>
-          <p><span class="typed" data-typed-items="Frère bien-aimé, Passionné de football,Petit Zidane, Homme au grand cœur, Toujours dans nos cœurs"></span></p>
+          <h2>En mémoire de Pasteur Muanza Polecha Matunga Zebedee</h2>
+          <p><span class="typed" data-typed-items="Serviteur fidèle de Dieu, Pasteur de l'Église FEPACO NZAMBE MALAMU, Père aimant, Berger attentif, Toujours dans nos cœurs"></span></p>
         </div>
       </section>
 
@@ -16,82 +16,15 @@
       <br><br><br>
       <section id="about" class="about section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-md-4">
-              <div class="row justify-content-between gy-4">
-                <div class="col-lg-5">
-                  <img src="/assets/img/portfolio/IMG-20240919-WA0017.jpg" class="img-fluid" alt="">
-                </div>
-                <p><strong>Wazamani</strong></p>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="about-me">
-                <h4>Témoignage pour Henock Ngandu Kabadi</h4>
-                <p>
-                  Henock Ngandu Kabadi était bien plus qu'un passionné de football ; il incarnait la détermination, le talent et la persévérance. Dès son plus jeune âge, Henock a su captiver son entourage par son habileté avec le ballon et son esprit d'équipe. Son talent l'a rapidement hissé au sommet du football congolais, attirant l'attention de grands noms comme Claude Le Roy. Sélectionné pour un stage de perfectionnement en France à seulement 14 ans, il a fait preuve d'un potentiel exceptionnel.
-                </p>
-                <p>
-                  Bien que les chemins de la vie l'aient finalement éloigné du terrain de football professionnel, Henock n'a jamais abandonné sa passion pour le sport qui avait tant marqué son enfance. Sa vie, partagée entre ses responsabilités familiales et ses rêves sportifs, a été une source d'inspiration pour ceux qui l'entouraient. En tant que père aimant de sa fille Karine et frère dévoué au sein de sa famille, Henock a toujours montré l'importance de la famille, du travail acharné et de l'amour pour ce que l'on fait.
-                </p>
-                <p>
-                  Son départ laisse un grand vide, mais son souvenir, marqué par ses accomplissements et sa personnalité chaleureuse, restera à jamais gravé dans nos cœurs. Henock, tu étais un véritable modèle, et ta mémoire continuera de briller à travers ceux que tu as touchés.
-                </p>
-              </div>
-            </div>
-          </div>
+          <!-- Les témoignages seront ajoutés ici -->
         </div>
-
-        <br>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-md-4">
-              <div class="row justify-content-between gy-4">
-                <div class="col-lg-5">
-                  <img src="/assets/img/2.jpg" class="img-fluid" alt="">
-                </div>
-                <p><strong>Israel Mutombo</strong></p>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="about-me">
-                <h4>À Toi, Mon Frère</h4>
-                <p>
-                  Dans le doux souffle du vent, je sens ton passage,
-                  Ton rire, ton cœur, résonnent au-delà des âges.
-                  Ton absence est un vide, un chagrin silencieux,
-                  Mais je sais que tu brilles parmi les bienheureux.
-                </p>
-                <p>
-                  Ton amour, ton sourire, demeurent éternels,
-                  Comme les étoiles qui veillent dans le ciel.
-                  Chaque instant partagé, gravé dans ma mémoire,
-                  Un trésor que je garde, une flamme d'espoir.
-                </p>
-                <p>
-                  Même si nos chemins se séparent ici-bas,
-                  Je sais qu'un jour, au-delà des tracas,
-                  Nous nous retrouverons, dans la lumière infinie,
-                  Dans les bras de Jésus, pour l'éternité réunis.
-                </p>
-                <p>
-                  Adieu pour un temps, mon frère bien-aimé,
-                  Dans l'espoir de ce jour, je reste à espérer.
-                  En Christ, nous nous reverrons, dans Sa gloire,
-                  Et là, sans fin, nous partagerons notre histoire.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
       </section>
 
       <!-- Contact Section -->
       <section id="contact" class="contact section">
         <div class="container section-title" data-aos="fade-up">
           <h2>Contact</h2>
-          <p>En mémoire de Henock Ngandu Kabadi</p>
+          <p>En mémoire de Pasteur Muanza Polecha Matunga Zebedee</p>
         </div>
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -102,7 +35,7 @@
                   <i class="bi bi-telephone flex-shrink-0"></i>
                   <div>
                     <h3>WhatsApp</h3>
-                    <p><a href="https://wa.me/243991683269" target="_blank" style="color:green;">+243 991 683 269</a></p>
+                    <p><a href="https://wa.me/243842691517" target="_blank" style="color:green;">+243 842 691 517</a></p>
                   </div>
                 </div>
               </div>
@@ -120,27 +53,27 @@
           </div>
 
           <div class="text-center mt-4">
-            <p>Pour toute question ou souvenir à propos de Henock, n'hésitez pas à nous contacter. Merci de contribuer à sa mémoire.</p>
+            <p>Pour toute question ou souvenir à propos du Pasteur Muanza Polecha, n'hésitez pas à nous contacter. Merci de contribuer à sa mémoire.</p>
           </div>
         </div>
       </section>
 
       <!-- Credits Section -->
       <section id="credits" class="credits section">
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title">
           <h2 class="credits-title">Conception</h2>
-          <p class="credits-subtitle">Ce site a été créé avec amour et soin pour honorer la mémoire de Henock Ngandu Kabadi.</p>
+          <p class="credits-subtitle">Ce site a été créé avec amour et soin pour honorer la mémoire de Pasteur Muanza Polecha Matunga Zebedee.</p>
         </div>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
           <div class="text-center credits-content">
             <p class="credits-text">Conception et développement par <strong class="credits-brand">IM DIGITAL LABS</strong>.</p>
             <p class="credits-text">
               <strong class="credits-label">Contact direct :</strong><br>
-              <a href="https://wa.me/243991683269" target="_blank" class="credits-link whatsapp-link">WhatsApp: +243 991 683 269</a><br>
+              <a href="https://wa.me/243842691517" target="_blank" class="credits-link whatsapp-link">WhatsApp: +243 842 691 517</a><br>
               <a href="mailto:imdigitallabs@gmail.com" class="credits-link email-link">Email: imdigitallabs@gmail.com</a>
             </p>
-            <p class="credits-text">Nous espérons que ce site continuera à célébrer la vie et l'héritage de Henock, tout en permettant à ses proches de se souvenir de lui avec tendresse.</p>
+            <p class="credits-text">Nous espérons que ce site continuera à célébrer la vie et l'héritage du Pasteur Muanza Polecha, tout en permettant à ses proches de se souvenir de lui avec tendresse.</p>
             <p class="credits-text">Merci pour votre visite.</p>
           </div>
         </div>
@@ -279,6 +212,12 @@ export default {
 
 <style scoped>
 /* Styles pour la section Credits - Visibilité selon le thème */
+#credits {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
 .credits-title {
   color: var(--heading-color) !important;
 }

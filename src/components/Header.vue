@@ -2,7 +2,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <router-link to="/" class="logo d-flex align-items-center">
-        <h1 class="sitename">Henock Ngandu</h1>
+        <h1 class="sitename">Pasteur Muanza Polecha</h1>
       </router-link>
 
       <nav id="navmenu" class="navmenu">

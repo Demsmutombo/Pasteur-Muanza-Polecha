@@ -80,22 +80,22 @@
               <div class="carte-image-container">
                 <div class="carte-image-frame">
                   <img 
-                    src="/assets/img/FB_IMG_1726419737492.jpg" 
-                    alt="Henock Ngandu Kabadi" 
+                    src="/assets/img/portfolio/image du pasteur/WhatsApp Image 2025-12-28 at 21.55.57.jpeg" 
+                    alt="Pasteur Muanza Polecha Matunga Zebedee" 
                     class="carte-image"
                   />
                 </div>
               </div>
               
               <!-- Nom -->
-              <h2 class="carte-name">Henock Ngandu Kabadi</h2>
+              <h2 class="carte-name">Pasteur Muanza Polecha Matunga Zebedee</h2>
               
               <!-- Dates -->
-              <p class="carte-dates">15 Mai 1992 - 2 Septembre 2024</p>
+              <p class="carte-dates">26 juin 1956 - 20 décembre 2025</p>
               
               <!-- Message -->
               <p class="carte-message">
-                Que ton âme trouve la paix éternelle et le réconfort. Repose en paix, cher Henock. Tu nous manqueras profondément.
+                Que ton âme repose en paix dans la gloire du Seigneur. Serviteur fidèle de Dieu, tu as combattu le bon combat, tu as achevé la course, tu as gardé la foi.
               </p>
               
               <!-- Séparateur -->
@@ -103,8 +103,8 @@
               
               <!-- Informations sur les obsèques -->
               <div class="carte-service-info">
-                <p class="service-date">9 Septembre 2024</p>
-                <p class="service-location">Nécropole de l'Eternité</p>
+                <p class="service-date">10 janvier 2026</p>
+                <p class="service-location">Cité de la sagesse (n'sele bambou)</p>
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default {
           const url = URL.createObjectURL(blob)
           const link = document.createElement('a')
           link.href = url
-          link.download = 'carte-memorial-henock-ngandu-kabadi.png'
+          link.download = 'carte-memorial-pasteur-muanza-polecha.png'
           link.style.display = 'none'
           document.body.appendChild(link)
           link.click()

@@ -8,8 +8,8 @@
       <div class="credits text-center">
         <p style="color: var(--contrast-color);">Conçu par <strong style="color: var(--accent-color);">IM DIGITAL LABS</strong></p>
         <p style="margin-top: 10px; color: var(--contrast-color);">
-          <a href="https://wa.me/243991683269" target="_blank" class="footer-link whatsapp-link" style="color: #25D366; text-decoration: none; margin-right: 15px;">
-            <i class="bi bi-whatsapp me-1"></i>WhatsApp: +243 991 683 269
+          <a href="https://wa.me/243842691517" target="_blank" class="footer-link whatsapp-link" style="color: #25D366; text-decoration: none; margin-right: 15px;">
+            <i class="bi bi-whatsapp me-1"></i>WhatsApp: +243 842 691 517
           </a>
           <span style="margin: 0 10px; color: var(--contrast-color);">|</span>
           <a href="mailto:imdigitallabs@gmail.com" class="footer-link email-link" style="color: var(--accent-color); text-decoration: none;">
